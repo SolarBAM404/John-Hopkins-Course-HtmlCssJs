@@ -24,12 +24,13 @@ body {
 }
 
 .col-title {
-    float: right;
-    padding: 0 2rem;
-    margin-top: 0;
-    border: solid 1px;
-    border-top-width: 0;
-    border-right-width: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    margin: 0;
 }
 
 #chicken {
@@ -45,10 +46,11 @@ body {
 }
 
 .box-text {
-    clear: right;
+    padding-top: 15px;
 }
 
 .content {
+    position: relative;
     margin: 0 5px;
     border: solid 1px black;
     background-color: rgb(175, 175, 175);
