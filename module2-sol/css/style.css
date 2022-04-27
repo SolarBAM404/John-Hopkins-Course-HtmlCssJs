@@ -1,0 +1,90 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    color: black;
+    margin: 0;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.col-title {
+    float: right;
+    padding: 0 2rem;
+    margin-top: 0;
+    border: solid 1px;
+    border-top-width: 0;
+    border-right-width: 0;
+}
+
+#chicken {
+    background-color: rgb(225, 160, 85);
+}
+
+#beef {
+    background-color: rgb(60, 225, 85);
+}
+
+#sushi {
+    background-color: rgb(225, 255, 0);
+}
+
+.box-text {
+    clear: right;
+}
+
+.content {
+    margin: 0 5px;
+    border: solid 1px black;
+    background-color: rgb(175, 175, 175);
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        width: 33.333333333333%;
+        float: left;
+    }
+    .box-group {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .box-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-item {
+        margin-top: 15px;
+    }
+}
